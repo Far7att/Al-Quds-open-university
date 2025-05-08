@@ -1,0 +1,203 @@
+/* stylelogin.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #ffd8d8;
+    color: #17224d;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(23, 34, 77, 0.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+    color: #17e9e1;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #17224d, #2d53e7);
+    padding-top: 80px;
+}
+
+.login-container {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.login-form {
+    flex: 1;
+    padding: 3rem;
+}
+
+.login-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.login-form h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 80px;
+    height: 4px;
+    background-color: #17e9e1;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #17e9e1;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #17e9e1;
+    color: #17224d;
+}
+
+.btn-primary:hover {
+    background-color: #11c1c1;
+    box-shadow: 0 5px 15px rgba(23, 233, 225, 0.4);
+}
+
+.btn-secondary {
+    background-color: #43669c;
+    color: white;
+    margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: #2a4777;
+    box-shadow: 0 5px 15px rgba(67, 102, 156, 0.4);
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #17224d;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: #17e9e1;
+}
+
+.login-image {
+    flex: 1;
+    min-height: 300px;
+    background: url('https://via.placeholder.com/450x500?text=Login+Image') no-repeat center;
+    background-size: cover;
+}
+
+footer {
+    background-color: #17224d;
+    color: #f3cfcf;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #f8dcdc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: #17e9e1;
+}
+
+copyright {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-image {
+        height: 200px;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+}
